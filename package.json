@@ -1,19 +1,16 @@
 {
   "name": "rhyme-bot",
-  "version": "1.0.0",
-  "description": "Telegram bot that generates rhymes using OpenAI",
-  "main": "src/index.js",
+  "version": "2.0.0",
+  "description": "Telegram bot with Redis queue and workers",
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "nodemon src/index.js"
+    "start:bot": "node src/index.js",
+    "start:worker": "node src/worker.js"
   },
   "dependencies": {
     "telegraf": "^4.16.3",
     "openai": "^4.47.1",
     "mongoose": "^8.4.0",
+    "bullmq": "^5.7.0",
     "dotenv": "^16.4.5"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.3"
   }
 }

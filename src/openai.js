@@ -1,8 +1,6 @@
 const OpenAI = require('openai');
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 
 const generateRhymes = async (word) => {
   const completion = await openai.chat.completions.create({
