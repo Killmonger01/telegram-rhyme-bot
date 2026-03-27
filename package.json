@@ -1,0 +1,19 @@
+{
+  "name": "rhyme-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot that generates rhymes using OpenAI",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "telegraf": "^4.16.3",
+    "openai": "^4.47.1",
+    "mongoose": "^8.4.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.3"
+  }
+}
